@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> chuyen doi tien te</title>
+  <style>
+    table {
+      width: 700px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+        <th>Amout</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+      <td><input type="text" id="amount" name="amount"></td>
+      <td>
+
+         <select id="from">
+            <option name="from" value="0" >Vietnam</option>
+            <option name="from" value="1"  >USD</option>
+          </select>
+      </td>
+      <td>
+
+        <select id="to">
+          <option name="to" value="1" >USD</option>
+          <option name="to" value="0"  >Vietnam</option>
+        </select>
+      </td>
+      <td>
+          <button type="button" name="convert" onclick="convert()" >Convert</button>
+      </td>
+    </tr>
+  </table>
+  <p id="result" style="color: blue; font-family: Arial">Result:</p>
+
+  <script>
+    function convert() {
+      const convert_num = 0.000042;
+      let from = document.getElementById("from").value;
+      let to = document.getElementById("to").value;
+      let amountGet = +document.getElementById("amount").value;
+      if (from == to) {
+        document.getElementById("result").innerHTML = "Vui long nhap lai " + amountGet;
+      }
+      if (from== '0' && to == '1') {
+        document.getElementById("result").innerHTML = "USD: " + amountGet * convert_num;
+      }
+      if (from== '1' && to == '0') {
+        document.getElementById("result").innerHTML = "Vietnam: " + amountGet / convert_num;
+      }
+    }
+  </script>
+</body>
+</html>
