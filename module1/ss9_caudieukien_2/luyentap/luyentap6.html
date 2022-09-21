@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai6</title>
+</head>
+<body>
+<script>
+  let doanhthu=+prompt(" nhap doanh thu (USD)");
+  let hoahong=doanhthu/10;
+  if(doanhthu<100){
+    alert(" Hoa hong = "+hoahong);
+  }else{
+    if(doanhthu<1000){
+      hoahong=hoahong+(doanhthu/100);
+      alert(" Hoa hong ="+hoahong);
+    }
+    else{
+       hoahong=hoahong+(doanhthu/10);
+      alert(" Hoa hong ="+hoahong);
+    }
+  }
+</script>
+</body>
+</html>
