@@ -6,10 +6,10 @@
 </head>
 <body>
 <script>
-    let tien=+prompt(" Nhap so tien gui ngan hang:  ");
-    let nam=+prompt(" Nhap so nam gui tien:  ");
-    let tienlai=tien*0.7;
-    
+    let tien=+prompt(" Nhap so tien gui (VND) ");
+    let year=+prompt(" Nhap so nam gui ");
+    let laisuat=tien*(1+7/100)**year;
+    alert(" lai suat  sau "+year+" gui tien la "+laisuat);
 </script>
 </body>
 </html>

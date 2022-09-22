@@ -5,10 +5,25 @@
     <title>2.7</title>
 </head>
 <body>
-<script>
-  let a=+prompt(" nhap  a");
-  let b=+prompt(" nhap  b");
-  let c=+prompt(" nhap  c");
+    <script>
+        let x=+prompt(" nhap  x");
+        let y=+prompt(" nhap  y");
+        let z=+prompt(" nhap  z");
+        let delta=(y*y-4*x*z);
+        if(delta===0){
+            let xd=-y/(2*x) ;
+            alert("Phuong trinh co nghiem kep x1=x2= "+xd);
+        }
+        else if(delta<0){
+                alert("Phuong trinh vo nghiem");
+            }
+            else {
+                let x1=(-y +(Math.sqrt(delta))/2*x);
+                let x2=(-y -(Math.sqrt(delta))/2*x);
+                alert(" Phuong trinh co 2 nghiem x1="+x1+" x2="+x2);
+            }
+
+
 </script>
 </body>
 </html>
