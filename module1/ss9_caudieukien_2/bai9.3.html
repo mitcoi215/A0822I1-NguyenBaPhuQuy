@@ -5,8 +5,48 @@
     <title>tao may tinh don gian</title>
 </head>
 <body>
-<table>
+    <table>
+        <tr>
+            <td colspan="4"><input  type="text"  id="tinh"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="nhap(this.value)" value="1"></td>
+            <td><input type="button" onclick="nhap(this.value)" value="2"></td>
+            <td><input type="button" onclick="nhap(this.value)" value="3"></td>
+            <td><input type="button" onclick="nhap(this.value)" value="+"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="nhap(this.value)" value="4"></td>
+            <td><input type="button" onclick="nhap(this.value)" value="5"></td>
+            <td><input type="button" onclick="nhap(this.value)" value="6"></td>
+            <td><input type="button" onclick="nhap(this.value)" value="-"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="nhap(this.value)" value="7"></td>
+            <td><input type="button" onclick="nhap(this.value)" value="8"></td>
+            <td><input type="button" onclick="nhap(this.value)" value="9"></td>
+            <td><input type="button" onclick="nhap(this.value)" value="*"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="xoa()" value="C"></td>
+            <td><input type="button" onclick="nhap(this.value)" value="0"></td>
+            <td><input type="button" onclick="bang()" value="="></td>
+            <td><input type="button" onclick="nhap(this.value)" value="/"></td>
+        </tr>
+    </table>
+    <script>
+        function nhap(so){
+            document.getElementById("tinh").value+=so;
+        }
+        function bang(){
+            string=document.getElementById("tinh").value;
+            document.getElementById("tinh").value=eval(string);
+        }
+        function xoa(){
+            string=document.getElementById("tinh").value;
+            document.getElementById("tinh").value="";
 
-</table>
+        }
+    </script>
 </body>
 </html>
