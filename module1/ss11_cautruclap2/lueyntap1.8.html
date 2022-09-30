@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>bài tập 8</title>
+</head>
+<body>
+<button onclick="Play()">PLAY</button>
+<script>
+  function Play() {
+    let min = +prompt("MIN=");
+    let max = +prompt("MAX=");
+    let numberRandom;
+    numberRandom =Math.floor(Math.random()*(max-min) + min);
+    let guessNumber;
+    do {
+      guessNumber = Number(prompt("nhập vào số cần đoán"));
+      if (guessNumber < min || guessNumber > max){
+        alert("bạn phải nhập trong khoảng từ "+min +" đến " + max);
+      }else {
+        break;
+      }
+    }while (true);
+
+    for (let j = 0; j<=3;j++){
+      if (numberRandom == guessNumber){
+        alert("bạn đã đoán đúng");
+        break;
+      }else if(numberRandom < guessNumber){
+        alert("số bạn nhập đã lớn hơn");
+        guessNumber = Number(prompt("nhập số nhỏ hơn"));
+      }else if(numberRandom > guessNumber){
+        alert("số bạn nhập đã nhỏ hơn");
+        guessNumber = Number(prompt("nhập số nhỏ hơn"));
+      }
+    }
+  }
+</script>
+
+</body>
+</html>
