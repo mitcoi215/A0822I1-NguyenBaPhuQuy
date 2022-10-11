@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyentap1.2</title>
+</head>
+<body>
+<script>
+  let array=[];
+  let max=0;
+  let index=-1;
+  for (let i = 0; i < 10; i++) {
+    array[i]=+prompt(" nhap phan tu thu "+(i+1));
+  }
+
+  for (let i = 0; i < 10; i++) {
+    if(array[i]>=max){
+      max=array[i];
+      index=i;
+    }
+  }
+  alert("so len nhat la "+max);
+  alert(" vi tri "+index);
+</script>
+</body>
+</html>

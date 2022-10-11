@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tudien</title>
+</head>
+<body>
+<input type="text" placeholder="Nhập từ muốn dịch" id="engLish" ">
+<input type="button" value="Dịch" onclick="Dịch()">
+<div id="result"></div>
+<script>
+    let englishWord = ["One", "Two", "Three","Beautiful"];
+    let vietnamWord = ["Một", "Hai", "Ba"," Xinh đẹp"];
+    function Dịch() {
+        let index=-1;
+        let myWord = document.getElementById("engLish").value;
+        for (let i = 0; i < englishWord.length; i++) {
+            if (myWord == englishWord[i]) {
+                index=i;
+                document.getElementById("result").innerText = vietnamWord[index];
+            }
+        }
+        if (index == -1){
+            document.getElementById("result").innerText = " Không có từ này trong từ điển"
+        }
+    }
+</script>
+</body>
+</html>

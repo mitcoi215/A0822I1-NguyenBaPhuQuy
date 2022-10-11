@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyentap1.3</title>
+</head>
+<body>
+<script>
+  let array=[];
+  let max=0;
+  let sum=0;
+  for (let i = 0; i < 3; i++) {
+    array[i]=+prompt(" nhap phan tu thu "+(i+1));
+  }
+
+  for (let i = 0; i < 10; i++) {
+    if(array[i]<0){
+      sum++;
+    }
+  }
+  document.write(" tong cac so nguyen am trong mang la "+sum);
+</script>
+</body>
+</html>

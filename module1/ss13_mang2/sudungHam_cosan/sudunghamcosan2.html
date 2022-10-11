@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sudunghamcosan bai2</title>
+</head>
+<body>
+<script>
+  let number=window.prompt(" nhap day so tu nhien ");
+  let num=number.toString();
+  let result = [num[0]];
+  document.write(" Mang vua nhap :"+number);
+  for(let i=1;i<num.length;i++){
+    if(num[i-1]%2==0&&num[i]%2==0){
+      result.push('-',num[i]);
+    }
+    else
+    {
+      result.push(num[i]);
+    }
+  }
+  document.write("<br> Mang sau khi loc: "+result.join(''));
+</script>
+</body>
+</html>

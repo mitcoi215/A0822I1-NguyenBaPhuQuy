@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>luyentap1.6</title>
+</head>
+<body>
+<script>
+  let array=[];
+  let index= 0;
+  for (let i = 0; i < 4; i++) {
+    array[i]=+prompt(" nhap phan tu thu "+(i+1));
+  }
+  let v=+prompt(" Nhap so V ");
+  for (let i = 0; i < array.length; i++) {
+    for (let j = i+1; j < array.length; j++) {
+      if(v==array[i]){
+        array[i]=0;
+        let temp=array[i];
+        array[i]=array[j];
+        array[j]=temp;
+      }
+      }
+    }
+
+  alert(array);
+</script>
+</body>
+</html>

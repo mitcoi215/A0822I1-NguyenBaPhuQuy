@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyentap1.6</title>
+</head>
+<body>
+<script>
+  let array=[];
+  let max=0;
+  let check= false;
+  for (let i = 0; i < 3; i++) {
+    array[i]=+prompt(" nhap phan tu thu "+(i+1));
+  }
+  let v=+prompt(" Nhap so V ");
+  for (let i = 0; i < 10; i++) {
+    if(array[i]==v){
+     check=true;
+    }
+  }
+  if(check==true){
+    document.writeln("V is in the array" );
+  }else{
+    document.writeln("V is not in the array");
+  }
+</script>
+</body>
+</html>
