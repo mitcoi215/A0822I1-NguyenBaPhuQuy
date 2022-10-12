@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyentap2.6</title>
+</head>
+<body>
+  <script>
+    let n= +prompt(" Nhap do dai cua mang ");
+    let array=[];
+    for (let i = 0; i < n; i++) {
+      array[i]= prompt(" Nhap ki tu thu :"+(i+1));
+    }
+    for (let i = 0; i < array.length; i++) {
+      if(array[i]=='-'){
+        array[i]='_';
+     }
+   }
+    alert(array);
+  </script>
+</body>
+</html>

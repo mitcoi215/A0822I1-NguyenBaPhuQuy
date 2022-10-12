@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyentap2.5</title>
+</head>
+<body>
+  <script>
+    let n=prompt(" nhap chuoi 1  ");
+    let n2=prompt(" nhap chuoi 2  ");
+   // let array=n.split("");
+ //   let array2=n2.split("");
+    let check=true;
+      for (let i = 0; i < n.length; i++) {
+        for (let j = 0; j < n2.length; j++) {
+         if(n[i]==n2[j]){
+             check=true;
+           } else {
+             check=false;
+           }
+         }
+        }
+    if(check==true){
+      document.write(" Giong nhau ");
+    }else{
+      document.write(" Khong giong nhau");
+      }
+
+  document.write("<br>"+n);
+      document.write("<br>"+n2);
+  </script>
+</body>
+</html>

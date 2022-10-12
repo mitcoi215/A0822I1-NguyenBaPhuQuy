@@ -6,17 +6,29 @@
 </head>
 <body>
 <script>
-  let interger1 = prompt("Nhập vào 1 số nguyên.");
-  let index=0
-  let intArray3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -1, -2, -3, -4, -5, -6, -7, -8, -9, -10];
-  for (let i = 0; i < intArray3.length; i++) {
-    if(interger1==intArray3[i]){
-      index=i
-      intArray3.splice(index,1);
-      intArray3.push(0);
+  let str1 = prompt("nhập vào chuỗi 1:");
+  let str2 = prompt("nhập vào chuỗi 2:");
+  let array1 = str1.split("");
+  let array2 = str2.split("");
+  let check = 1;
+  if (array1.length == array2.length) {
+    for (let i = 0; i < array2.length; i++) {
+      if (array1[i] === array2[i]) {
+        check = 1;
+      } else {
+        check = 0;
+        break;
+      }
     }
+    if (check == 1) {
+      document.write("2 chuỗi giống nhau");
+    } else {
+      document.write("2 chuỗi khác nhau ");
+    }
+  } else {
+    document.write("2 chuỗi khác nhau ");
   }
-  document.writeln(intArray3);
+
 </script>
 </body>
 </html>
