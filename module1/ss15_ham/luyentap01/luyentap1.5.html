@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>timsao</title>
+</head>
+<body>
+  <script>
+    let findstar=prompt('FIND STAR ENTER:');
+    let star=['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let consteal=['Ursa Minor','Tarurus','Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    function search(str) {
+      let index=-1;
+      for (let i = 0; i < str.length; i++) {
+        if (findstar == str[i]) {
+          index = i;
+        }
+      }
+        return index;
+    }
+      for (let i = 0; i < consteal.length; i++) {
+        if(search(star)==-1){
+          alert(" Khong tim thay ngoi sao ");
+          break;
+        }
+        if(i==search(star)){
+          alert(" COnsteal of StAR :"+consteal[i]);
+        }
+      }
+
+  </script>
+</body>
+</html>

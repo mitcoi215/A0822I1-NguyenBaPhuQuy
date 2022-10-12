@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyendoifeelvameter</title>
+</head>
+<body>
+<script>
+  function footToMeter(Foot){
+    m=0.305*Foot;
+    return m;
+  }
+  function meterToFoot(Meter){
+    f=3.279*Meter;
+    return f;
+  }
+  let Foot=prompt(" nhap so feet =");
+  let Meter=prompt(" nhap so meter =");
+  document.write(+Foot+"feet = "+footToMeter(Foot)+"meter<br>");
+  document.write(+Meter+"meter = "+meterToFoot(Meter)+"feet");
+
+</script>
+</body>
+</html>
