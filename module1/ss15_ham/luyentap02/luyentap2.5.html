@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Min</title>
+</head>
+<body>
+  <script>
+    function check(a,b,c){
+      if(a<b&&a<c){
+        return a;
+        }else if(b<c){
+        return b;
+      }else {
+        return c;
+      }
+
+    }
+
+    let a=+prompt(" nhap a ");
+    let b=+prompt(" nhap b ");
+    let c=+prompt(" nhap c ");
+    alert(check(a,b,c));
+  </script>
+</body>
+</html>
