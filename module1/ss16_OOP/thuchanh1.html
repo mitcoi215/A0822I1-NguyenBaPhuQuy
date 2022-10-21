@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuchanh</title>
+</head>
+<body>
+  <script>
+    class mydate{
+      constructor(day,month,year) {
+        this.day=day;
+        this.month=month;
+        this.year=year;
+      }
+      output(day,month,year){
+        alert(" Ngay "+date.getDay()+" Thang "+date.getMonth()+" Nam "+date.getYear());
+      }
+      getDay(){
+        return this.day;
+      }
+      getMonth(){
+        return this.month;
+      }
+      getYear(){
+        return this.year;
+      }
+      setDay(day){
+        this.day=day;
+      }
+      setMonth(month){
+        this.month=month;
+      }
+      setYear(year){
+        this.year=year;
+      }
+    }
+
+    let date = new mydate(10,2,9999);
+    date.setDay(99);
+    date.setMonth(1);
+    date.setYear(2020);
+
+    date.output();
+
+  </script>
+</body>
+</html>

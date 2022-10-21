@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hinhchunhat</title>
+</head>
+<body>
+<script>
+
+  class HCN{
+    constructor(dai,rong) {
+      this.dai=dai;
+      this.rong=rong;
+    }
+    getDientich(){
+       return this.dai*this.rong;
+    }
+
+    chuvi(){
+      let v=(this.dai+this.rong)*2;
+      alert(" Chu vi ="+v);
+    }
+    setRong(rong){
+      this.rong=rong;
+    }
+  }
+
+  let hcn1= new HCN(10,5);
+  hcn1.setRong(6);
+  alert(hcn1.getDientich());
+  hcn1.chuvi();
+</script>
+</body>
+</html>
