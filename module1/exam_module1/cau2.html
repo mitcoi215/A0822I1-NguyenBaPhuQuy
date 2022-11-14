@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyentap2.2</title>
+</head>
+<body>
+<script>
+    let n = prompt(' Enter string : ');
+    let string = n.toString();
+    for (let i = 0; i < string.length / 2; i++) {
+        if (string[i] == string[string.length - 1 - i]) {
+            continue;
+        } else {
+            document.write(" Chuỗi " + (string) + " KHÔNG đối xứng ");
+            break;
+        }
+    }
+
+    document.write(" Chuỗi " + (string) + " đối xứng ");
+
+</script>
+</body>
+</html>

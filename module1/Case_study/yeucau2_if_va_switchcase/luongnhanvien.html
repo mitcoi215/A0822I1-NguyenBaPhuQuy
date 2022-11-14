@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luong_nhan_vien</title>
+</head>
+<body>
+<script>
+  let luong=+prompt(" Nhap luong nhan vien  VND ");
+  document.write(" Lương ban đầu : "+luong+"<br>")
+  if(luong<7000000){
+    luong=luong-(luong*5/100);
+  }else if(luong<15000000 ){
+    luong=luong-(luong*10/100);
+
+  }else{
+    luong=luong-(luong*20/100);
+
+  }
+  document.write(" Lương sau khi trừ thuế: "+luong);
+</script>
+</body>
+</html>

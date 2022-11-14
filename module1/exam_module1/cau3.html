@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cau3</title>
+</head>
+<body>
+<script>
+    let n = +prompt(" Enter number array :");
+    let array = [];
+    let arrayPrime = [];
+    for (let i = 0; i < n; i++) {
+        array[i] = prompt(" Enter array index " + (i + 1));
+    }
+
+    function isPrime(n) {
+        for (let i = 2; i < n; i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    //check
+    for (let i = 0; i < array.length; i++) {
+        if (isPrime(array[i]) == true) {
+            arrayPrime.push(array[i]);
+        }
+    }
+    document.write(" Primes in array : " + arrayPrime);
+    //sort
+
+    for (let i = 0; i < arrayPrime.length - 1; i++) {
+        for (let j = 1; j < arrayPrime.length; j++) {
+            if (arrayPrime[j] < arrayPrime[i]) {
+                let temp = arrayPrime[i];
+                arrayPrime[i] = arrayPrime[j];
+                arrayPrime[j] = temp;
+            }
+        }
+    }
+    document.write("<br> Sort prime array :" + arrayPrime);
+</script>
+</body>
+</html>

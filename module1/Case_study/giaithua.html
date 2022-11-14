@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giaithua</title>
+</head>
+<body>
+<script>
+    let n=+prompt(" Nhập n ");
+    document.write(giaithua(n));
+    function giaithua(n){
+        if(n<=1){
+            return 1;
+        }else {
+            return n*giaithua(n-1);
+        }
+    }
+</script>
+</body>
+</html>

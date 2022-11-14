@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mảng a mảng b</title>
+</head>
+<body>
+<script>
+  let n=+prompt(" Nhap do dai mang A ");
+  let arrayA=[];
+  let arrayB=[];
+
+  for (let i = 0; i < n; i++) {
+    arrayA[i]=+prompt(" Nhâp phần tử thứ "+(i+1));
+  }
+  for (let i = 0; i < n; i++) {
+    arrayB[i]=0;
+    for (let j = 0; j <n; j++) {
+      if(i>=j){
+        arrayB[i]+=arrayA[j];
+      }
+    }
+  }
+  document.write("Mảng cũ : "+arrayA);
+  document.write("<br> Mảng mới: "+arrayB);
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+</head>
+<body>
+<script>
+    let num_1 = 0, num_2 = 1, fibonaci;
+    let n = +prompt(" Nhap độ dài dãy số fibonaci");
+    for (let i = 0; i < n; i++) {
+
+        fibonaci = num_1 + num_2;
+        num_1 = num_2;
+        num_2 = fibonaci;
+        document.write(fibonaci + "<br>");
+    }
+</script>
+</body>
+</html>

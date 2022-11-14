@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  do {
+    let n = +prompt("Enter the length of the array: ")
+    if (n > 20 || n <= 0) {
+      alert("Enter error , please enter again :")
+    } else {
+      array = new Array(n);
+      for (let i = 0; i < n; i++) {
+        array[i] = prompt("arr[ " + i + "]:")
+      }
+      for (let i = 0; i < n; i++) {
+        let count = 0
+        for (let j = i; j < n; j++) {
+          if (array[i]===array[j] ){
+            count++
+          }
+        }
+        document.write(array[i]+":"+count)
+      }
+      // document.write("Array :" + array)
+      // document.write("<br>")
+      // document.write("The length of the array  : " + array.length)
+      break;
+    }
+  }while (true)
+
+</script>
+</body>
+</html>
