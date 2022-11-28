@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class xoa_phan_tu_khoi_mang {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] array = {10, 4, 6, 6, 7, 8, 6, 0, 0, 0, 0};
+        int[] array = {1, 2, 3, 5, 6, 11, 22, 33, 55, 33, 4};
         System.out.println("Enter the value need to delete :");
         int n = sc.nextInt();
         int count = 0;
